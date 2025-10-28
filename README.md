@@ -33,8 +33,10 @@ Unique Passwords for Each Account
 
 Use a Password Manager
 
-    Convenience and Security: A password manager can help you create, store, and manage strong passwords without needing to remember each one.
+    Convenience and Security: 
+    A password manager can help you create, store, and manage strong passwords without needing to remember each one.
 
 Enable Multi-Factor Authentication (MFA)
 
-    Extra Layer of Security: Whenever possible, use MFA, which requires more than just a password to access your accounts.
+    Extra Layer of Security: 
+    Whenever possible, use MFA, which requires more than just a password to access your accounts.
