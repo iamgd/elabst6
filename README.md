@@ -107,5 +107,15 @@ pwscore – Password strength scoring tool
 
 cracklib-check – Checks passwords against known weak patterns
 
+Bitwarden Password Strength Checker – https://bitwarden.com/password-strength/
+
 Kali Linux Terminal – For performing all testing and analysis
+
+# 🧠 Summary of Findings
+
+Passwords with more length, randomness, and mixed characters are far more secure.
+
+Weak or predictable passwords can be cracked within seconds by automated tools.
+
+Using a password manager and multi-factor authentication (MFA) greatly improves security.
 
