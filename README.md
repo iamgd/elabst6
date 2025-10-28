@@ -1,7 +1,52 @@
 # elabst6
-# Create a Strong Password and Evaluate Its Strength
+# 🔐 Create a Strong Password and Evaluate Its Strength
 
-Guidelines for Creating a Strong Password
+# 🧩 Objective
+
+The goal of this task is to understand how password complexity affects security by creating, testing, and analyzing multiple passwords of varying strength.
+
+# 🧱 Steps Performed
+
+# 1. Create Multiple Passwords
+
+Created a passwords.txt file containing several passwords with different levels of complexity.
+
+Included examples with lowercase only, mixed case, numbers and special characters.
+
+# 2. Install Password Strength Tools
+
+Installed necessary packages on Kali Linux:
+
+sudo apt update
+sudo apt install cracklib-runtime libcrack2 libpwquality-tools libpam-pwquality -y
+
+# 3. Test Password Strength
+
+Checked each password using:
+
+while IFS= read -r pw; do
+  score=$(echo "$pw" | pwscore)
+  printf '%s: %s\n' "$pw" "$score"
+done < passwords.txt > pwscore_report.txt
+
+Also used:
+
+while read p; do
+  echo "$p : $(echo $p | cracklib-check)"
+done < passwords.txt > strength_report.txt
+
+# 4. Analyze Results
+
+ - Compared feedback and scores from the tools.
+
+ - Observed that longer passwords with mixed character types scored higher.
+
+ - Weak passwords were flagged as “too simple” or “based on a dictionary word.”
+
+# 5. Identify Best Practices
+
+Derived key points on what makes a password strong and resistant to brute force or dictionary attacks.
+
 Length and Complexity
 
     Minimum Length: 
@@ -40,3 +85,27 @@ Enable Multi-Factor Authentication (MFA)
 
     Extra Layer of Security: 
     Whenever possible, use MFA, which requires more than just a password to access your accounts.
+
+# 6. Research on Common Attacks
+
+Studied how brute force, dictionary, and rainbow table attacks target weak passwords.
+Learned that password complexity and uniqueness make these attacks far less effective.
+
+# 📄 Files Created
+
+passwords.txt → List of test passwords
+
+pwscore_report.txt → Password strength scores
+
+strength_report.txt → Cracklib feedback
+
+final_password_analysis.txt → Combined results and observations
+
+# 🧰 Tools Used
+
+pwscore – Password strength scoring tool
+
+cracklib-check – Checks passwords against known weak patterns
+
+Kali Linux Terminal – For performing all testing and analysis
+
