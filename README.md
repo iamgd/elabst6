@@ -21,7 +21,7 @@ Avoid Common Pitfalls
 Techniques for Strong Passwords
 
     Passphrases: 
-    Create a memorable phrase by combining unrelated words (e.g., "BlueSky!Pizza#42"). This can be easier to remember and harder to guess.
+    Create a memorable phrase by combining unrelated words (e.g., "Dadoo*Jazar#5$1"). This can be easier to remember and harder to guess.
 
     Random Characters: 
     Use a random string of characters. Password managers can generate these for you.
